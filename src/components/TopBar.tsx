@@ -51,7 +51,7 @@ export default function TopBar() {
                <a className="btn btn-ghost btn-lg text-xl" href="#">
                   <img src={imagotipo} alt="Imagotipo" />
                </a>
-               <ul className="menu menu-horizontal invisible min-w-full gap-4 md:visible">
+               <ul className="menu menu-horizontal invisible min-w-full gap-2 md:visible">
                   <li>
                      <a
                         className="link-hover link link-primary 2xl:text-lg"
