@@ -22,8 +22,11 @@ jobs:
          - run: npm ci
          - run: npm run build
 
-         - name: Configure safe.directory for Git
-           run: git config --global --add safe.directory /github/workspace/dist
+         - name: Mark github workspace as safe
+           run: |
+               git config --global --add safe.directory '*'
+               git config --global --add safe.directory /github/workspace
+               git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
          - name: Init new repo in dist folder and commit generated files
            run: |
