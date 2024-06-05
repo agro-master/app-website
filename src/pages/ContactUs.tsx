@@ -1,9 +1,12 @@
 export default function ContactUs() {
    return (
-      <div className="flex w-screen flex-col gap-14 bg-base-100 py-12">
-         <div className="m-auto flex w-6/12 flex-col gap-5 text-center">
+      <div
+         id="contact-us"
+         className="flex w-screen flex-col gap-14 bg-base-100 py-12"
+      >
+         <div className="m-auto flex w-6/12 flex-col gap-5 text-center 2xl:w-5/12">
             <h3 className="text-5.5xl font-outfit font-bold">Contact Us</h3>
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed 2xl:text-xl">
                Join us in transforming the future of agriculture in a
                sustainable and efficient way Got questions or ready to get
                started? Reach out to us today!

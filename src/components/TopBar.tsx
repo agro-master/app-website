@@ -2,7 +2,7 @@ import imagotipo from "../assets/imagotipo.svg";
 
 export default function TopBar() {
    return (
-      <div className="m-auto w-11/12">
+      <div id="top" className="m-auto w-11/12 2xl:w-9/12">
          <div className="navbar w-full bg-base-100 py-5">
             <div className="navbar-start">
                <div className="dropdown">
@@ -48,26 +48,49 @@ export default function TopBar() {
                      </li>
                   </ul>
                </div>
-               <a className="btn btn-ghost btn-lg text-xl">
+               <a className="btn btn-ghost btn-lg text-xl" href="#">
                   <img src={imagotipo} alt="Imagotipo" />
                </a>
-               <ul className="menu menu-horizontal invisible min-w-full md:visible">
+               <ul className="menu menu-horizontal invisible min-w-full gap-4 md:visible">
                   <li>
-                     <a className="link-hover link link-primary">Home</a>
+                     <a
+                        className="link-hover link link-primary 2xl:text-lg"
+                        href="#home"
+                     >
+                        Home
+                     </a>
                   </li>
                   <li>
-                     <a className="link-hover link link-primary">
+                     <a
+                        className="link-hover link link-primary 2xl:text-lg"
+                        href="#our-solution"
+                     >
                         Our solution
                      </a>
                   </li>
                   <li>
-                     <a className="link-hover link link-primary">Features</a>
+                     <a
+                        className="link-hover link link-primary 2xl:text-lg"
+                        href="#features"
+                     >
+                        Features
+                     </a>
                   </li>
                   <li>
-                     <a className="link-hover link link-primary">Our team</a>
+                     <a
+                        className="link-hover link link-primary 2xl:text-lg"
+                        href="#our-team"
+                     >
+                        Our team
+                     </a>
                   </li>
                   <li>
-                     <a className="link-hover link link-primary">Contact us</a>
+                     <a
+                        className="link-hover link link-primary 2xl:text-lg"
+                        href="#contact-us"
+                     >
+                        Contact us
+                     </a>
                   </li>
                </ul>
             </div>

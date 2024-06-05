@@ -34,10 +34,13 @@ const FEATURE_PANELS: AboutCardProps[] = [
 
 export default function Features() {
    return (
-      <div className="flex min-h-[40vh] min-w-full flex-col justify-center px-8 pb-36 py-24 2xl:min-h-[70vh]">
+      <div
+         id="features"
+         className="flex min-h-[40vh] min-w-full flex-col justify-center px-8 py-24 pb-36 2xl:min-h-[70vh]"
+      >
          <div className="relative">
-            <div className="absolute right-[-20rem] -top-8 -z-10">
-               <img src={sideImage} className="mx-10 max-w-xl" />
+            <div className="absolute -top-8 right-[-20rem] -z-10">
+               <img src={sideImage} className="mx-10 max-w-xl 2xl:mx-5" />
                <span className="absolute left-0 top-0 -z-20 h-[35rem] w-[35rem] rounded-[100%] bg-[#89BC66] 2xl:top-0 2xl:h-[40rem] 2xl:w-[40rem]"></span>
             </div>
          </div>
@@ -80,8 +83,10 @@ function FeaturePanel(props: AboutCardProps) {
             alt="icon"
             className={props.iconClass ?? "h-9 w-9"}
          />
-         <h4 className="font-outfit text-xl font-bold">{props.title}</h4>
-         <p className="font-open-sans text-xs md:text-sm">
+         <h4 className="font-outfit text-xl font-bold 2xl:text-2xl">
+            {props.title}
+         </h4>
+         <p className="font-open-sans text-xs 2xl:text-base">
             {props.description}
          </p>
       </div>

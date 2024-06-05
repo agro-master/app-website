@@ -32,7 +32,7 @@ const ABOUT_CARDS: AboutCardProps[] = [
 
 export default function About() {
    return (
-      <div className="relative flex flex-col gap-16 py-10">
+      <div id="our-solution" className="relative flex flex-col gap-16 py-10">
          <div className="m-auto flex w-8/12 flex-col gap-5 text-center">
             <h3 className="font-outfit text-5.5xl font-bold">
                About AgroMaster
@@ -45,14 +45,14 @@ export default function About() {
                productivity and sustainability.
             </div>
          </div>
-         <div className="m-auto grid w-[88%] grid-cols-2 grid-rows-2 gap-10 gap-x-20">
+         <div className="m-auto grid w-[88%] grid-cols-2 grid-rows-2 gap-10 gap-x-20 2xl:w-[80%]">
             {ABOUT_CARDS.map((card, i) => (
                <AboutCard key={i} {...card} />
             ))}
          </div>
 
-         <span className="absolute -right-36 top-28 -z-20 h-[18rem] w-[18rem] rounded-[100%] bg-primary 2xl:top-0 2xl:h-[40rem] 2xl:w-[40rem]"></span>
-         <span className="absolute -left-52 top-80 -z-20 h-[23rem] w-[23rem] rounded-[100%] bg-secondary 2xl:top-0 2xl:h-[40rem] 2xl:w-[40rem]"></span>
+         <span className="absolute -right-36 top-28 -z-20 h-[18rem] w-[18rem] rounded-[100%] bg-primary 2xl:-right-[20rem] 2xl:top-0 2xl:h-[23rem] 2xl:w-[23rem]"></span>
+         <span className="absolute -left-52 top-80 -z-20 h-[23rem] w-[23rem] rounded-[100%] bg-secondary 2xl:-left-[24rem] 2xl:top-72 2xl:h-[27rem] 2xl:w-[27rem]"></span>
       </div>
    );
 }
@@ -66,7 +66,7 @@ interface AboutCardProps {
 
 function AboutCard(props: AboutCardProps) {
    return (
-      <div className="shadow-outline relative flex w-full rounded-2xl bg-white py-5 pl-12 pr-3">
+      <div className="shadow-outline hover:shadow-outline-lg relative flex w-full rounded-2xl bg-white py-5 pl-12 pr-3">
          <div className="absolute -left-9 top-1/4 w-fit rounded-full bg-primary p-4">
             <img
                src={props.icon}
@@ -78,7 +78,7 @@ function AboutCard(props: AboutCardProps) {
             <h4 className="font-outfit text-xl font-bold uppercase">
                {props.title}
             </h4>
-            <p className="font-open-sans text-xs md:text-sm">
+            <p className="font-open-sans text-xs md:text-sm 2xl:text-base">
                {props.description}
             </p>
          </div>
