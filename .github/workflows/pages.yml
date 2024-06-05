@@ -1,4 +1,5 @@
 name: Deploy to GitHub Pages
+
 on:
    push:
       branches: ["main"]
@@ -13,35 +14,22 @@ jobs:
       runs-on: ubuntu-latest
 
       steps:
-         - uses: actions/checkout@v2
+         - name: Checkout repository
+           uses: actions/checkout@v2
 
-         - name: Setup Node.js & build site
+         - name: Setup Node.js
            uses: actions/setup-node@v2
            with:
               node-version: "20"
-         - run: npm ci
-         - run: npm run build
 
-         # - name: Mark github workspace as safe
-         #   run: |
-         #       git config --global --add safe.directory '*'
-         #       git config --global --add safe.directory /github/workspace
-         #       git config --global --add safe.directory "$GITHUB_WORKSPACE"
+         - name: Install dependencies
+           run: npm ci
 
-         - name: Init new repo in dist folder and commit generated files
-           run: |
-              cd ./dist
-              git init
-              git add -A
-              git config --global --add safe.directory /github/workspace/dist
-              git config --local user.email "action@github.com"
-              git config --local user.name "GitHub Action"
-              git commit -m 'deploy'
+         - name: Build the project
+           run: npm run build
 
-         - name: Force push to destination branch
-           uses: ad-m/github-push-action@v0.5.0
+         - name: Deploy to GitHub Pages
+           uses: peaceiris/actions-gh-pages@v3
            with:
               github_token: ${{ secrets.GITHUB_TOKEN }}
-              branch: gh-pages
-              force: true
-              directory: ./dist
+              publish_dir: ./dist
