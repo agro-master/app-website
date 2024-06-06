@@ -10,7 +10,7 @@ function App() {
    return (
       <div className="h-screen w-screen select-none overflow-x-hidden scroll-smooth bg-base-100">
          <TopBar />
-         <main className="m-auto w-full md:w-11/12 bg-base-100 2xl:w-9/12">
+         <main className="m-auto w-full bg-base-100 md:w-11/12 2xl:w-10/12">
             <HeroBanner />
             <About />
             <Features />

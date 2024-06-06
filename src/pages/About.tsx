@@ -34,9 +34,9 @@ export default function About() {
    return (
       <div
          id="our-solution"
-         className="relative z-30 flex flex-col gap-20 bg-base-100 py-4 md:gap-16 md:py-10"
+         className="relative z-30 flex flex-col gap-20 bg-base-100 py-4 md:gap-16 md:py-10 xl:py-5"
       >
-         <div className="m-auto flex w-10/12 flex-col gap-7 md:gap-5 text-center md:w-8/12">
+         <div className="m-auto flex w-10/12 flex-col gap-7 text-center md:w-8/12 md:gap-5">
             <h3 className="font-outfit text-4xl font-bold">About AgroMaster</h3>
             <div className="font-open-sans text-base font-normal md:text-xl">
                Our app provides a complete and efficient automation of the
@@ -46,7 +46,7 @@ export default function About() {
                productivity and sustainability.
             </div>
          </div>
-         <div className="m-auto grid w-11/12 grid-cols-1 grid-rows-4 gap-10 gap-x-20 gap-y-20 md:w-[88%] md:grid-cols-2 md:grid-rows-2 md:gap-y-0 2xl:w-[80%]">
+         <div className="m-auto grid w-11/12 grid-cols-1 grid-rows-4 gap-10 gap-x-20 gap-y-20 md:w-[88%] md:grid-cols-2 md:grid-rows-2 md:gap-y-10 2xl:w-[70%]">
             {ABOUT_CARDS.map((card, i) => (
                <AboutCard key={i} {...card} />
             ))}

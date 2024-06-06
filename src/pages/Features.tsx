@@ -36,24 +36,24 @@ export default function Features() {
    return (
       <div
          id="features"
-         className="relative z-20 flex h-fit min-h-[40vh] min-w-full flex-col-reverse justify-center bg-base-100 px-3 py-16 pb-36 md:flex-col md:py-24 2xl:min-h-[70vh]"
+         className="relative z-20 flex h-fit min-h-[40vh] min-w-full flex-col-reverse justify-center bg-base-100 px-3 py-16 pb-36 md:flex-col md:py-24 2xl:min-h-[70vh] 2xl:px-10 2xl:py-36"
       >
          <div className="relative h-[21rem] md:h-0">
-            <div className="absolute right-[-8rem] top-8 z-10 md:-top-8 md:right-[-20rem]">
+            <div className="absolute right-[-8rem] top-8 z-10 md:-top-8 md:right-[-20rem] 2xl:right-[-20rem]">
                <img
                   src={sideImage}
                   className="mx-16 max-w-sm md:mx-10 md:max-w-xl 2xl:mx-5"
                />
-               <span className="absolute left-12 top-0 -z-20 size-[26rem] rounded-[100%] bg-[#89BC66] md:left-0 md:top-0 md:size-[35rem] 2xl:top-0 2xl:size-[40rem]"></span>
+               <span className="absolute left-12 top-0 -z-20 size-[26rem] rounded-[100%] bg-[#89BC66] md:left-0 md:top-0 md:size-[35rem] 2xl:-left-10 2xl:top-0 2xl:size-[40rem]"></span>
             </div>
          </div>
          <div className="flex h-full w-full flex-col gap-10 md:w-[65%] 2xl:mx-32">
             <div className="flex flex-col gap-4">
                <div className="flex flex-col gap-3 md:gap-0">
-                  <span className="text-center font-open-sans text-base font-bold !leading-3 text-secondary md:text-left md:text-lg">
+                  <span className="text-center font-open-sans text-base font-bold !leading-3 text-secondary md:text-left md:text-lg 2xl:text-xl">
                      System features
                   </span>
-                  <h3 className="text-center font-outfit text-4xl font-bold !leading-[1.35] md:text-left md:text-5.5xl">
+                  <h3 className="text-center font-outfit text-4xl font-bold !leading-[1.35] md:text-left md:text-5.5xl 2xl:text-6xl">
                      Powerful features
                   </h3>
                </div>
@@ -86,7 +86,7 @@ function FeaturePanel(props: AboutCardProps) {
             alt="icon"
             className={props.iconClass ?? "mx-auto h-9 w-9 md:m-0"}
          />
-         <h4 className="text-center font-outfit text-base font-bold md:text-left md:text-xl 2xl:text-2xl">
+         <h4 className="text-center font-outfit text-base font-bold md:text-left md:text-xl 2xl:text-3xl">
             {props.title}
          </h4>
          <p className="text-center font-open-sans text-xs md:text-left 2xl:text-base">
