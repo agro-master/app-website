@@ -28,7 +28,7 @@ const FEATURE_PANELS: AboutCardProps[] = [
       description:
          "Navigate seamlessly through our user-friendly mobile application.",
       icon: interfaceIcon,
-      iconClass: "h-9 w-12",
+      iconClass: "h-9 w-12 mx-auto md:m-0",
    },
 ];
 
@@ -36,29 +36,32 @@ export default function Features() {
    return (
       <div
          id="features"
-         className="flex min-h-[40vh] min-w-full flex-col justify-center px-8 py-24 pb-36 2xl:min-h-[70vh]"
+         className="relative z-20 flex h-fit min-h-[40vh] min-w-full flex-col-reverse justify-center bg-base-100 px-3 py-16 pb-36 md:flex-col md:py-24 2xl:min-h-[70vh]"
       >
-         <div className="relative">
-            <div className="absolute -top-8 right-[-20rem] -z-10">
-               <img src={sideImage} className="mx-10 max-w-xl 2xl:mx-5" />
-               <span className="absolute left-0 top-0 -z-20 h-[35rem] w-[35rem] rounded-[100%] bg-[#89BC66] 2xl:top-0 2xl:h-[40rem] 2xl:w-[40rem]"></span>
+         <div className="relative h-[21rem] md:h-0">
+            <div className="absolute right-[-8rem] top-8 z-10 md:-top-8 md:right-[-20rem]">
+               <img
+                  src={sideImage}
+                  className="mx-16 max-w-sm md:mx-10 md:max-w-xl 2xl:mx-5"
+               />
+               <span className="absolute left-12 top-0 -z-20 size-[26rem] rounded-[100%] bg-[#89BC66] md:left-0 md:top-0 md:size-[35rem] 2xl:top-0 2xl:size-[40rem]"></span>
             </div>
          </div>
-         <div className="flex h-full w-[65%] flex-col gap-10 2xl:mx-32">
+         <div className="flex h-full w-full flex-col gap-10 md:w-[65%] 2xl:mx-32">
             <div className="flex flex-col gap-4">
-               <div className="flex flex-col gap-0">
-                  <span className="font-open-sans text-lg font-bold !leading-3 text-secondary">
+               <div className="flex flex-col gap-3 md:gap-0">
+                  <span className="text-center font-open-sans text-base font-bold !leading-3 text-secondary md:text-left md:text-lg">
                      System features
                   </span>
-                  <h3 className="font-outfit md:text-5.5xl text-2xl font-bold !leading-[1.35]">
+                  <h3 className="text-center font-outfit text-4xl font-bold !leading-[1.35] md:text-left md:text-5.5xl">
                      Powerful features
                   </h3>
                </div>
-               <span className="font-open-sans text-lg">
+               <span className="text-center font-open-sans text-base md:text-left md:text-lg">
                   Here are some of the main features of our system:
                </span>
             </div>
-            <div className="grid w-[88%] grid-cols-2 grid-rows-2 gap-10 gap-x-5">
+            <div className="grid w-full grid-cols-2 grid-rows-2 gap-10 gap-x-5 md:w-[88%]">
                {FEATURE_PANELS.map((feature, i) => (
                   <FeaturePanel key={i} {...feature} />
                ))}
@@ -81,12 +84,12 @@ function FeaturePanel(props: AboutCardProps) {
          <img
             src={props.icon}
             alt="icon"
-            className={props.iconClass ?? "h-9 w-9"}
+            className={props.iconClass ?? "mx-auto h-9 w-9 md:m-0"}
          />
-         <h4 className="font-outfit text-xl font-bold 2xl:text-2xl">
+         <h4 className="text-center font-outfit text-base font-bold md:text-left md:text-xl 2xl:text-2xl">
             {props.title}
          </h4>
-         <p className="font-open-sans text-xs 2xl:text-base">
+         <p className="text-center font-open-sans text-xs md:text-left 2xl:text-base">
             {props.description}
          </p>
       </div>

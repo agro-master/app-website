@@ -11,6 +11,7 @@ export default {
       extend: {
          fontSize: {
             "5.5xl": "3.438rem",
+            "4.5xl": "2.5rem",
          },
          boxShadow: {
             outline: "0 0 10px 1px rgba(0, 0, 0, 0.1)",
