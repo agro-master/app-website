@@ -6,7 +6,7 @@ export default function TopBar() {
    const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
 
    return (
-      <div className="drawer m-auto w-full md:w-11/12 2xl:w-10/12">
+      <div className="5xl:w-11/12 drawer m-auto w-full md:w-11/12 2xl:w-10/12">
          <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
          <div className="drawer-content flex flex-col">
             <div className="navbar w-full flex-row-reverse justify-between bg-base-100 px-1 py-2 lg:flex-row lg:px-4 lg:py-4">
@@ -73,7 +73,7 @@ export default function TopBar() {
                      <ul className="menu menu-horizontal invisible min-w-full gap-2 md:visible">
                         <li>
                            <a
-                              className="link-hover link link-primary 2xl:text-xl"
+                              className="5xl:text-xl link-hover link link-primary xl:text-lg"
                               href="#home"
                            >
                               Home
@@ -81,7 +81,7 @@ export default function TopBar() {
                         </li>
                         <li>
                            <a
-                              className="link-hover link link-primary 2xl:text-xl"
+                              className="5xl:text-xl link-hover link link-primary xl:text-lg"
                               href="#our-solution"
                            >
                               Our solution
@@ -89,7 +89,7 @@ export default function TopBar() {
                         </li>
                         <li>
                            <a
-                              className="link-hover link link-primary 2xl:text-xl"
+                              className="5xl:text-xl link-hover link link-primary xl:text-lg"
                               href="#features"
                            >
                               Features
@@ -97,7 +97,7 @@ export default function TopBar() {
                         </li>
                         <li>
                            <a
-                              className="link-hover link link-primary 2xl:text-xl"
+                              className="5xl:text-xl link-hover link link-primary xl:text-lg"
                               href="#our-team"
                            >
                               Our team
@@ -105,7 +105,7 @@ export default function TopBar() {
                         </li>
                         <li>
                            <a
-                              className="link-hover link link-primary 2xl:text-xl"
+                              className="5xl:text-xl link-hover link link-primary xl:text-lg"
                               href="#contact-us"
                            >
                               Contact us
@@ -115,7 +115,7 @@ export default function TopBar() {
                   </div>
                </div>
                <div className="navbar-end hidden lg:inline-flex">
-                  <a className="btn btn-outline btn-secondary border-[2.5px] px-9 text-base hover:!border-[#89BC66] hover:!bg-transparent hover:!text-[#89BC66] 2xl:text-xl">
+                  <a className="5xl:text-xl btn btn-outline btn-secondary border-[2.5px] px-9 text-base hover:!border-[#89BC66] hover:!bg-transparent hover:!text-[#89BC66] 2xl:text-lg">
                      Contact us
                   </a>
                </div>

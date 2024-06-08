@@ -53,7 +53,7 @@ export default function About() {
          </div>
 
          <span className="invisible absolute -right-36 top-28 z-20 h-[18rem] w-[18rem] rounded-[100%] bg-primary md:visible 2xl:-right-[20rem] 2xl:top-0 2xl:h-[23rem] 2xl:w-[23rem]"></span>
-         <span className="invisible absolute -left-52 top-80 z-20 h-[23rem] w-[23rem] rounded-[100%] bg-secondary md:visible 2xl:-left-[24rem] 2xl:top-72 2xl:h-[27rem] 2xl:w-[27rem]"></span>
+         <span className="invisible absolute -left-52 top-72 z-20 h-[23rem] w-[23rem] rounded-[100%] bg-secondary md:visible 2xl:-left-[24rem] 2xl:top-72 2xl:h-[27rem] 2xl:w-[27rem]"></span>
       </div>
    );
 }

@@ -36,7 +36,7 @@ export default function Features() {
    return (
       <div
          id="features"
-         className="relative z-20 flex h-fit min-h-[40vh] min-w-full flex-col-reverse justify-center bg-base-100 px-3 py-16 pb-36 md:flex-col md:py-24 2xl:min-h-[70vh] 2xl:px-10 2xl:py-36"
+         className="relative z-20 flex h-fit min-h-[40vh] min-w-full flex-col-reverse justify-center bg-base-100 px-3 py-16 pb-36 md:flex-col md:py-24 xl:px-14 xl:py-44 2xl:min-h-[70vh] 2xl:px-10 2xl:py-36"
       >
          <div className="relative h-[21rem] md:h-0">
             <div className="absolute right-[-8rem] top-8 z-10 md:-top-8 md:right-[-20rem] 2xl:right-[-20rem]">

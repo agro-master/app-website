@@ -1,0 +1,83 @@
+{
+   "topbar": {
+      "home": "Home",
+      "our_solution": "Our solution",
+      "features": "Features",
+      "our_team": "Our team",
+      "contact_us": "Contact Us"
+   },
+   "home": {
+      "title": "Monitor all your crops with just one app",
+      "subtitle": "AgroMaster: Your all-in-one agricultural assistant. From real-time monitoring to advanced analytics, ensure healthier crops and maximize yields.",
+      "button": "Beta Sign-Up"
+   },
+   "our_solution": {
+      "title": "About AgroMaster",
+      "subtitle": "Our app provides a complete and efficient automation of the agricultural cycle, allowing users to obtain valuable insights about their crops through a single application. You can monitor and manage every aspect of your farm from anywhere, improving productivity and sustainability.",
+      "cards": [
+         {
+            "title": "Comprehensive Monitoring",
+            "description": "Keep an eye on all aspects of your crops' health and growth with real-time data and insights."
+         },
+         {
+            "title": "Cost Efficiency",
+            "description": "Reduce waste and optimize resource usage, saving you time and money."
+         },
+         {
+            "title": "easy to use",
+            "description": "Our user-friendly interface makes it simple for farmers of all tech levels to navigate and utilize the app."
+         },
+         {
+            "title": "Scalable Solutions",
+            "description": "Whether you're managing a small farm or a large agricultural enterprise, AgroMaster scales with your needs."
+         }
+      ]
+   },
+   "features": {
+      "supertitle": "System features",
+      "title": "Powerful features",
+      "subtitle": "Here are some of the main features of our system:",
+      "panels": [
+         {
+            "title": "Automation",
+            "description": "Efficiently manage agricultural processes with automated workflows."
+         },
+         {
+            "title": "Pre-made Reports",
+            "description": "Access comprehensive reports, including pest and disease analysis."
+         },
+         {
+            "title": "Plant Data Analysis",
+            "description": "Analyze plant data to make informed decisions and optimize crop health."
+         },
+         {
+            "title": "Intuitive Interface",
+            "description": "Navigate seamlessly through our user-friendly mobile application.",
+            "iconClass": "h-9 w-12 mx-auto md:m-0"
+         }
+      ]
+   },
+   "our_team": {
+      "title": "Who Are We?",
+      "subtitle": "We are a team with extensive experience in developing technological solutions for the agricultural sector, and we are excited to present an innovative product.",
+      "sections": {
+         "years": {
+            "title": "+4 years",
+            "description": "Of experience in agricultural systems development"
+         },
+         "projects": {
+            "title": "+80 projects",
+            "description": "Executed related to the collection, analysis and presentation of agricultural data"
+         }
+      }
+   },
+   "contact_us": {
+      "title": "Contact Us",
+      "subtitle": "Join us in transforming the future of agriculture in a sustainable and efficient way Got questions or ready to get started? Reach out to us today!",
+      "buttons": {
+         "contact": "Contact Us",
+         "beta": "Beta Sign-Up"
+      }
+   },
+   "footer": "© 2024 AgroMaster. All rights reserved."
+}
